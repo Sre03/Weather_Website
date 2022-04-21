@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'WFont';
+    src: url('Godofthunder.ttf');
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bgimg::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.bgimg{
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://wallpaperaccess.com/full/1358473.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.area{
+    text-align: center;
+    padding-bottom: 1px;
+    background-color: rgba(151, 149, 149, 0.4);
+    color: white;
+    font-family: 'WFont';
+    letter-spacing: 4px;
+    border: 7px solid #ffffff;
+    border-radius: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    width: 60%;
+}
+
+.name{
+    padding-top: 10px;
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-family: 'WFont';
+}
+
+.container{
+    text-align: center;
+    padding-top: 15px;
+}
+
+.search:empty{
+    transform: translate(3.2%,0);
+}
+
+.search{
+    transform: translate(2%,0);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+
+.input>input{
+    padding: 10px;
+    border: #ffffff;
+    border-radius: 15px;
+    height: 0.5%;
+    background: rgba(70, 69, 69, 0.4);
+    font-family: 'WFont';
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.inputVal::placeholder{
+    color: #ffffff;
+    opacity: 0.75;
+    font-family: 'WFont';
+    font-size: 30px;
+}
+
+.button{
+    border: white;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    padding-bottom: 0px;
+    border-radius: 20px;
+    background:rgba(70, 69, 69, 0.4);
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.dispWeather:empty
+{
+    display:none;
+}
+
+.dispWeather{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'WFont';
+}
+
+.temp{
+    padding: 5px;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.temp:empty
+{
+    display:none;
+}
+
+.description{
+    padding: 5px;
+    font-size: 50px;
+    margin-bottom: 27px;
+    font-weight: bold;
+}
+
+.description:empty{
+    display: none;
+}
+
+.temp_min{
+    padding: 5px;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.temp_min:empty
+{
+    display:none;
+}
+
+.temp_max{
+    padding: 5px;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.temp_max:empty
+{
+    display:none;
+}
+
+.windspeed{
+    padding: 5px;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.windspeed:empty
+{
+    display:none;
+}
+
+.humidity{
+    padding: 5px;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.humidity:empty
+{
+    display:none;
+}
